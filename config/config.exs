@@ -21,8 +21,9 @@ use Mix.Config
 #     config :logger, level: :info
 #
 
-config :maestro,
-  api_key: {:system, "MAESTRO_API_KEY"}
+config :maestro, :maestro,
+  api_key: {:system, "MAESTRO_API_KEY"},
+  base_url: {:system, "MAESTRO_BASE_URL"}
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment
